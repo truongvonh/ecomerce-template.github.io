@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Learning course online</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="./images/favi_icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav py-3">
+      <div class="container d-flex justify-content-start"><a class="navbar-brand" href="#"> <img class="main-logo" src="./images/logo_main.png" alt=""></a>
+        <div id="navbarNavDropdown"><a class="navbar-brand d-block d-md-none" href="#"><img class="main-logo" src="./images/logo_main.png" alt=""></a>
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex all-badge align-items-center ml-auto"><i class="icon ion-ios-search font-icon-header fz-30 fz-md-20 mr-3"></i><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-heart font-icon-header fz-24 fz-md-16 mr-3"></i>
+            <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative d-none d-md-block" href="#"><i class="lnr lnr-chart-bars font-icon-header fz-24 fz-md-14 mr-3"></i>
+            <p class="position-absolute mb-0 rounded-circle fz-12 bg-danger p-2 text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-cart mr-3 font-icon-header fz-24 fz-md-14 mr-3"></i>
+            <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-user font-icon-header fz-24 fz-md-14"></i></a><a class="badge-wrapper position-relative d-none d-md-block" href="#"><i class="lnr lnr-text-align-left silver-color ml-4 fz-24 fz-md-14"></i></a></div>
+      </div>
+    </nav>
+    <div id="payment-method">
+      <section class="main-visual position-relative">
+        <div class="main-visual-breadcrumb position-relative">
+          <div class="container pt-4">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb bg-transparent pr-0 pl-0">
+                    <li class="readcrumb-item fz-16 op-font"><a class="name-color" href="/" aria-level="1"><span itemprop="name">Home</span></a>
+                    </li>
+                    <li class="readcrumb-item fz-16 op-font"><a class="name-color" href="/shopping-cart/" aria-level="2"><span itemprop="name">Shopping Cart</span></a>
+                    </li>
+                    <li class="readcrumb-item fz-16 op-font"><a class="name-color" href="/shopping-information/" aria-level="3"><span itemprop="name">Shipping Information</span></a>
+                    </li>
+                    <li class="readcrumb-item fz-16 op-font"><span class="font-weight-bold dark-color" itemprop="name">Payment Method</span>
+                    </li>
+                  </ol>
+                </nav>
+          </div>
+        </div>
+      </section>
+      <section class="products bg-white">
+        <div class="container">
+          <div class="row row-lists position-relative mb-5">
+            <div class="col-12 col-md-5 pl-3 pr-md-0 mb-5 mb-md-0 bg-white border-right">
+              <div class="payment-form">
+                <div class="info-title d-flex align-items-center border-bottom px-3 px-md-5 pt-5 pb-4 mb-4"><span class="border rounded-circle d-flex align-items-center justify-content-center mr-3">3</span>
+                  <h2 class="info-title fz-16 op-font name-color font-weight-bold mb-0">PAYMENT METHOD TT</h2>
+                </div>
+              </div>
+              <div class="form-group sale-tax font-weight-bold px-md-3 px-md-5">
+                <div class="col-12 d-flex justify-content-end mb-4 px-0">
+                  <label class="op-font fz-16">Sale Tax Islamabad: <span class="op-font fz-16">0%</span></label>
+                  <div class="form-group-select-arrow position-relative">
+                    <select class="form-control op-font fz-16 border-0 pt-0" id="sel1">
+                      <option value="">($0.00 USD)</option>
+                      <option value="1">($2.00 USD)</option>
+                      <option value="2">($3.00 USD)</option>
+                      <option value="3">($4.00 USD)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end px-0"><img class="shopping mr-2" src="./images/icon_shopping.png" alt="icon_shopping">
+                  <div class="form-group-select-arrow position-relative">
+                    <select class="form-control form-control-custom font-weight-normal border-0 op-font fz-16 pt-0" id="sel1">
+                      <option value="">$173.33 USD</option>
+                      <option value="1">$2.00 USD</option>
+                      <option value="2">$3.00 USD</option>
+                      <option value="3">$4.00 USD</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="debit-card mx-n3 mx-md-n0">
+                <div class="row no-gutters">
+                  <div class="col-2 d-flex align-items-center justify-content-end"><img class="card-img" src="./images/card_img.png" alt="card"></div>
+                  <div class="col-10">
+                    <div class="card-body">
+                      <h5 class="card-title op-font fz-18 light-color">Hi James,</h5>
+                      <p class="card-text op-font fz-18 light-color">Please add a credit or debit card to complete your purchase.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-info px-3 px-md-5 pt-5">
+                <div class="form-group">
+                      <label class="mo-font fz-16 name-color">First Name<sup class="ml-1">*</sup></label>
+                      <input class="form-control" type="text" placeholder="First Name">
+                </div>
+                <div class="form-group mb-4">
+                      <label class="mo-font fz-16 name-color">Contact Name<sup class="ml-1">*</sup></label>
+                      <input class="form-control" type="text" placeholder="First &amp; Last Name"><small class="form-text text-error" id="emailHelp">First name and Last name</small>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_01.png" alt=""></a></div>
+                  <div class="payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_02.png" alt=""></a></div>
+                  <div class="payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_03.png" alt=""></a></div>
+                  <div class="payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_04.png" alt=""></a></div>
+                  <div class="payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_05.png" alt=""></a></div>
+                </div>
+                <div class="form-group mb-4">
+                      <label class="mo-font fz-16 name-color">Card Number<sup class="ml-1">*</sup></label>
+                      <input class="form-control" type="text" placeholder="Enter Card Number"><small class="form-text text-error" id="emailHelp">We unable to ship to P.O box or similar address.</small>
+                </div>
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <label class="op-font fz-18">Expires</label>
+                      <div class="form-group-select-arrow position-relative">
+                        <select class="form-control pt-0" id="sel1">
+                          <option value="">MM/YY</option>
+                          <option value="1">22/12</option>
+                          <option value="2">21/10</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col"> 
+                          <label class="mo-font fz-16 name-color">CVV<sup class="ml-1"></sup></label>
+                          <input class="form-control" type="text" placeholder="3 Digits">
+                    </div>
+                  </div>
+                </div>
+                <fieldset disabled="">
+                  <div class="form-group mb-5">
+                    <div class="d-flex justify-content-between">
+                      <label class="mo-font fz-16 name-color">Billing Address</label><a href="#"><i class="icon ion-md-create">                   </i></a>
+                    </div>
+                    <input class="form-control" id="disabledTextInput" type="text" placeholder="Islamabad, Islamabad, 44000, Pakistan">
+                  </div>
+                </fieldset>
+                <p class="text-right">
+                  <button class="btn btn-dark light-color rounded-pill fz-12 mo-font text-uppercase font-weight-bold mb-3 py-2" type="button">PAY NOW</button>
+                </p>
+              </div>
+              <div class="address-card mx-3 mx-md-5 py-5 px-3">
+                <div class="row no-gutters mb-5">
+                  <div class="col-2 d-flex align-items-start justify-content-end"><img class="card-img" src="./images/card-people.png" alt="card"></div>
+                  <div class="col-10">
+                    <div class="card-body py-0">
+                      <h5 class="card-title mo-font fz-18 name-color mb-4">James Smith,</h5>
+                      <p class="card-text mo-font fz-16 name-color">Doctor's Plaza, G-9 Markaz, Karachi Company, Behind PSO Pump Islamabad, Pakistan-44000 Islamabad, Islamabad, 44000 Pakistan</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="phone-country">
+                  <input class="form-control border-0" id="phone" name="phone" type="tel">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 pl-md-0 bg-white">
+              <div class="protection-content pt-5 pl-md-5">
+                <div class="buyer-protec mb-5">
+                      <h2 class="fz-14 name-color mo-font font-weight-bold mb-4">Buyer Protection</h2>
+                      <div class="row mb-4">
+                        <div class="col-4 col-md-3"><img src="images/trusted-site.png" alt="trusted"></div>
+                        <div class="col-4 col-md-3"><img src="images/trusted-site.png" alt="trusted"></div>
+                        <div class="col-4 col-md-3"><img src="images/trusted-site.png" alt="trusted"></div>
+                      </div>
+                      <ul class="safe pl-0">
+                        <li class="fz-14 name-color mo-font mb-3"><img class="mr-3" src="images/icn-safe.png" alt="safe"><span>Full Refund if you don't receive your order </span></li>
+                        <li class="fz-14 name-color mo-font mb-3"><img class="mr-3" src="images/icn-safe.png" alt="safe"><span>Full or Partial Refund, if the item is not as described</span></li>
+                      </ul>
+                      <p class="pl-4"><a class="fz-14 mo-font read-more" href="#">Read more</a></p>
+                </div>
+                <div class="safe-checkout mb-5">
+                  <div class="col-10"><img src="./images/safe-checkout.png" alt="safe checkout"></div>
+                </div>
+                <div class="cart-info opacity-35">
+                      <div class="cart-content p-0 p-md-4 pb-5">
+                        <div class="cart-content-title p-3 border-top pb-4">
+                          <p class="fz-18 mo-font name-color pb-4">1. Shopping Cart</p>
+                          <div class="d-flex align-items-center bd-highlight">
+                            <div class="mr-auto bd-highlight">
+                              <h2 class="dark-color fz-16 op-font font-weight-bold mb-0">In your cart</h2>
+                            </div>
+                            <div class="bd-highlight"><span class="rounded-circle d-flex align-items-center justify-content-center">2</span></div>
+                          </div>
+                        </div>
+                        <div class="cart-items pb-5">
+                              <div class="row align-items-center mx-0 mx-md-4 p-3 border-bottom">
+                                <div class="w-20 text-center"><img src="./images/headphone.png" alt="Headset"></div>
+                                <div class="w-30 pl-3 text-break"><strong class="dark-color fz-16 mo-font font-weight-bold">Headset</strong>
+                                  <p class="fz-16 mo-font">Lorem ipsum</p>
+                                </div>
+                                <div class="w-15 d-flex align-items-center justify-content-center flex-column number"><i class="fas fa-chevron-up js-increment cursor-pointer"></i>
+                                  <input class="form-control p-0 text-center my-1" type="text" value="0" id="js-get-value"><i class="fas fa-chevron-down js-decrement cursor-pointer"></i>
+                                </div>
+                                <div class="w-25 d-flex align-items-center justify-content-center flex-column"><strong class="d-block fz-16 mo-font">$29.90</strong><small class="fz-16 mo-font">6% off</small></div>
+                                <div class="w-10 d-flex justify-content-md-between align-items-center flex-column flex-md-row">
+                                  <div class="icon ion-ios-heart fz-18 cursor-pointer"></div>
+                                  <div class="icon ion-ios-close-empty fz-30 cursor-pointer"></div>
+                                </div>
+                              </div>
+                              <div class="row align-items-center mx-0 mx-md-4 p-3 border-bottom">
+                                <div class="w-20 text-center"><img src="./images/headphone.png" alt="Headset"></div>
+                                <div class="w-30 pl-3 text-break"><strong class="dark-color fz-16 mo-font font-weight-bold">Headset</strong>
+                                  <p class="fz-16 mo-font">Lorem ipsum</p>
+                                </div>
+                                <div class="w-15 d-flex align-items-center justify-content-center flex-column number"><i class="fas fa-chevron-up js-increment cursor-pointer"></i>
+                                  <input class="form-control p-0 text-center my-1" type="text" value="0" id="js-get-value"><i class="fas fa-chevron-down js-decrement cursor-pointer"></i>
+                                </div>
+                                <div class="w-25 d-flex align-items-center justify-content-center flex-column"><strong class="d-block fz-16 mo-font">$29.90</strong><small class="fz-16 mo-font">6% off</small></div>
+                                <div class="w-10 d-flex justify-content-md-between align-items-center flex-column flex-md-row">
+                                  <div class="icon ion-ios-heart fz-18 cursor-pointer"></div>
+                                  <div class="icon ion-ios-close-empty fz-30 cursor-pointer"></div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="cart-shipping d-flex flex-wrap">
+                          <p class="fz-14 mo-font name-color pb-4">The items will come exactly what the images described.</p>
+                          <div class="col-10 col-md-6 mb-4 mb-md-0"><strong class="fz-14 mo-font dark-color">Shiping</strong>
+                            <div class="custom-control custom-checkbox mb-3 mb-md-4">
+                              <input class="custom-control-input" id="customCheck1" type="checkbox">
+                              <label class="custom-control-label" for="customCheck1"><span class="fz-14">(Not include handling time *please check the <a class="fz-14 mo-font font-weight-bold name-color" href="#">shipping policy)</a></span></label>
+                            </div>
+                            <div class="input-group mb-3">
+                              <input class="form-control" type="text" placeholder="Coupon Code">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary btn-apply fz-14" type="button">Apply</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-10 col-md-6 ml-auto">
+                            <div class="w-100 d-flex justify-content-end pb-2">
+                              <div class="col-6"><strong class="fz-14 mo-font dark-color font-weight-bold">Sub Total:</strong></div>
+                              <div class="col-6 text-right">
+                                <p class="fz-14 mo-font name-color">US $ 99.90</p>
+                              </div>
+                            </div>
+                            <div class="w-100 d-flex justify-content-end pb-2 mb-4 mb-md-5">
+                              <div class="col-6"><strong class="fz-14 mo-font dark-color font-weight-bold">Shiping</strong></div>
+                              <div class="col-6 text-right">
+                                <p class="fz-14 mo-font name-color">US $ 00.90</p>
+                              </div>
+                            </div>
+                            <div class="w-100 d-flex justify-content-end">
+                              <div class="col-6 py-2 border-top border-bottom"><strong class="fz-14 mo-font dark-color font-weight-bold">Grand Total</strong></div>
+                              <div class="col-6 py-2 border-top border-bottom text-right">
+                                <p class="fz-14 mo-font dark-color font-weight-bold">US $ 99.90</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-category mb-md-5 mb-4">
+        <div class="container">
+          <h2 class="fz-24 fz-md-20 mb-5 os-font font-weight-bold dark-color">Hot Products</h2>
+              <div class="carousel pb-5 slide normal-indicators" data-ride="carousel" id="category-product-slider-1">
+                <ol class="carousel-indicators">
+                  <li data-target="#category-product-slider-1" data-slide-to="0"></li>
+                  <li data-target="#category-product-slider-1" data-slide-to="1"></li>
+                  <li class="active" data-target="#category-product-slider-1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                        <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                        <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
+                        </div>
+                  </div>
+                  <div class="carousel-item active">
+                        <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
+                                <div class="thumb position-relative"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                                <div class="cart-area d-flex justify-content-between w-100 mt-2">
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                                  <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <h3 class="op-font name-color fz-16">Product title</h3>
+                                <div class="d-flex justify-content-center"> 
+                                      <ul class="rating" data-rating="5">
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                        <li class="rating__item"></li>
+                                      </ul>
+                                </div>
+                                <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
+                                    <del>$57.00</del></span></div>
+                                <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+    </div>
+            <section class="download-area position-relative d-flex align-items-center">
+              <div class="container-fluid position-relative text-center p-0">
+                <div class="content">
+                  <h2 class="text-light os-font fz-22 fz-md-30 text-center font-weight-bold">Download MantaDrop App Now!</h2>
+                  <p class="text-light fz-16 fz-md-20">For Better Experience</p>
+                  <div class="image-download d-flex justify-content-center"><a class="btn btn-link" href="#">       
+                      <div class="app-store pl-5 pr-3"><img class="w-100" src="./images/ic_ios.png" alt=""></div></a><a class="btn btn-link" href="#"> 
+                      <div class="android pr-5 pl-3"><img class="w-100" src="./images/ic_android.png" alt=""></div></a></div>
+                </div>
+                <div class="image-app text-center px-3"><img class="w-100" src="./images/img_phone.png" alt=""></div>
+              </div>
+            </section>
+        <section class="mail-area mt-5">
+          <div class="container pt-md-5">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h2 class="os-font dark-color pt-4">
+                  <p class="fz-14 fz-md-16 mb-1">Subscribe to our newsletter and </p>
+                  <p class="fz-16 fz-md-16 font-weight-bold os-font"> Get 4% off your first purchase</p>
+                </h2>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <form class="col-12 d-flex align-items-center justify-content-center mt-3"><i class="far fa-envelope pr-2"></i>
+                <label class="silver-color fz-14 mb-0">Email address</label>
+                <input class="form-control border-top-0 border-left-0 border-right-0 w-100 rounded-0 mx-2">
+                <button class="btn btn-dark fz-12 px-md-4 rounded-pill" type="submit">SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-3 mb-3">
+                <div class="main-logo"><img class="w-100" src="./images/logo_main.png" alt=""></div>
+              </div>
+              <div class="col-12 col-md-9 d-flex flex-column flex-md-row row">
+                <div class="col-md-4 w-100">
+                  <div class="item d-flex align-items-center mb-3"><i class="fas fa-phone font-weight-bold fz-20 pr-2 black-color"></i>
+                    <p class="mb-0 fz-16 os-font dark-color font-weight-bold">+1 (833)37-MANTA   <br><span class="fz-14 silver-color op-font font-weight-normal">Mon-Sat 9am-5pm Eastern</span></p>
+                  </div>
+                  <div class="item d-flex align-items-center mb-3"><i class="fas fa-envelope font-weight-bold fz-20 pr-2 black-color"></i>
+                    <p class="mb-0 fz-14 dark-color">contact@mantadrop.com</p>
+                  </div>
+                </div>
+                <div class="col-md-8 w-100">
+                  <div class="item d-flex align-items-center mb-3"><i class="fas fa-map-marker-alt font-weight-bold fz-20 pr-2 black-color pr-2"></i>
+                    <p class="mb-0 fz-14 dark-color">801 Second Avenue, Suite 800. Seattle <br>Washington, 98104, United States</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+                      <div class="col-12 mb-3 col-md-3">
+                        <h3 class="font-weight-bold fz-14 os-font dark-color">Customer Care</h3>
+                        <ul class="pl-0">
+                          <li><a class="dark-color fz-12" href="#">About</a></li>
+                          <li><a class="dark-color fz-12" href="#">Mantadrop</a></li>
+                          <li><a class="dark-color fz-12" href="#">Return/Refund Policies</a></li>
+                          <li><a class="dark-color fz-12" href="#">Buyer Protection</a></li>
+                          <li><a class="dark-color fz-12" href="#">Payment Method</a></li>
+                          <li><a class="dark-color fz-12" href="#">Shipping Policy</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 mb-3 col-md-3">
+                        <h3 class="font-weight-bold fz-14 os-font dark-color">Customer Care</h3>
+                        <ul class="pl-0">
+                          <li><a class="dark-color fz-12" href="#">About</a></li>
+                          <li><a class="dark-color fz-12" href="#">Mantadrop</a></li>
+                          <li><a class="dark-color fz-12" href="#">Return/Refund Policies</a></li>
+                          <li><a class="dark-color fz-12" href="#">Buyer Protection</a></li>
+                          <li><a class="dark-color fz-12" href="#">Payment Method</a></li>
+                          <li><a class="dark-color fz-12" href="#">Shipping Policy</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 mb-3 col-md-3">
+                        <h3 class="font-weight-bold fz-14 os-font dark-color">Customer Care</h3>
+                        <ul class="pl-0">
+                          <li><a class="dark-color fz-12" href="#">About</a></li>
+                          <li><a class="dark-color fz-12" href="#">Mantadrop</a></li>
+                          <li><a class="dark-color fz-12" href="#">Return/Refund Policies</a></li>
+                          <li><a class="dark-color fz-12" href="#">Buyer Protection</a></li>
+                          <li><a class="dark-color fz-12" href="#">Payment Method</a></li>
+                          <li><a class="dark-color fz-12" href="#">Shipping Policy</a></li>
+                        </ul>
+                      </div>
+                  <div class="col-12 mb-3 col-md-3 all-payment">
+                    <h3 class="font-weight-bold fz-14 os-font dark-color mb-3">We Using Safe Payment For </h3>
+                    <ul class="pl-0 d-inline-flex flex-wrap"> 
+                      <li class="pr-3 payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_01.png" alt=""></a></li>
+                      <li class="pr-3 payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_02.png" alt=""></a></li>
+                      <li class="pr-3 payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_03.png" alt=""></a></li>
+                      <li class="pr-3 payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_04.png" alt=""></a></li>
+                      <li class="pr-3 payment-item"><a href="#"><img class="img-fluid mb-3" src="./images/img_Payment_05.png" alt=""></a></li>
+                      <li class="w-100 last-payment"><a href="#"><img class="img-fluid" src="./images/logo_last_payment.png" alt=""></a></li>
+                    </ul>
+                  </div>
+              <p class="col-12 fz-12 op-font text-center">&copy; 2018-2019 Atok.ltd . All right reserved</p>
+            </div>
+          </div>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>

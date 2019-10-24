@@ -359,6 +359,13 @@ img {
   height: 1.6875rem;
 }
 
+.ic_home:before {
+  display: inline-block;
+  content: '';
+  background: url("./../images/ic_home.png") no-repeat center center;
+  background-size: cover;
+}
+
 .light-color {
   color: #fff;
 }
@@ -393,6 +400,10 @@ img {
 
 .font-icon-header {
   color: #d5d3d2;
+}
+
+.color-link {
+  color: #0b86ca;
 }
 
 .bd-silver {
@@ -680,6 +691,12 @@ body .ui-icon-loading + h1 {
   min-height: 12.5rem;
 }
 
+@media (min-width: 768px) {
+  .download-area {
+    min-height: 25rem;
+  }
+}
+
 .download-area:after {
   content: '';
   display: block;
@@ -714,7 +731,7 @@ body .ui-icon-loading + h1 {
 
 @media (min-width: 768px) {
   .download-area .image-app {
-    bottom: -11.25rem;
+    bottom: -14.375rem;
   }
 }
 
@@ -747,6 +764,11 @@ body .ui-icon-loading + h1 {
 
 .all-payment .last-payment img {
   width: 13rem;
+}
+
+#map {
+  min-height: 25rem;
+  width: 100vw;
 }
 
 .introduce {

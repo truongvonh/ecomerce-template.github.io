@@ -83,6 +83,9 @@ img {
 .opacity-90 {
   opacity: 0.9; }
 
+.opacity-35 {
+  opacity: 0.35; }
+
 .text-error {
   color: #ea4728;
   font-family: "Myriad Pro";
@@ -132,6 +135,33 @@ input {
   /* Internet Explorer */
   appearance: none;
   /* CSS3 */ }
+
+.info-title span {
+  width: 1.5rem;
+  height: 1.5rem; }
+
+.safe img {
+  width: 1.25rem;
+  height: 1.125rem; }
+
+#country-listbox {
+  scrollbar-color: #7f7f7f white;
+  /* thumb and track color */
+  scrollbar-width: thin; }
+
+#country-listbox::-webkit-scrollbar {
+  width: 7.5px; }
+
+#country-listbox::-webkit-scrollbar-track {
+  background: white; }
+
+#country-listbox::-webkit-scrollbar-thumb {
+  height: 50px;
+  border-right: 1px solid white;
+  border-radius: 4px;
+  height: 50px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#747474), to(#a8a8b0), color-stop(0.6, #747474)); }
 
 .os-font {
   font-family: 'Oswald', sans-serif; }
@@ -382,6 +412,20 @@ input {
   width: 1.125rem;
   height: 1.3125rem; }
 
+.ic_contact:before {
+  display: inline-block;
+  content: '';
+  background: url("./../images/ic_contact.png") no-repeat center center;
+  background-size: cover;
+  width: 2.4375rem;
+  height: 1.6875rem; }
+
+.ic_home:before {
+  display: inline-block;
+  content: '';
+  background: url("./../images/ic_home.png") no-repeat center center;
+  background-size: cover; }
+
 .light-color {
   color: #fff; }
 
@@ -408,6 +452,9 @@ input {
 
 .font-icon-header {
   color: #d5d3d2; }
+
+.color-link {
+  color: #0b86ca; }
 
 .bd-silver {
   border: 1px solid #ababab; }
@@ -654,6 +701,9 @@ body {
   background: url("./../images/bg_girl_02.png") no-repeat center center;
   background-size: cover;
   min-height: 12.5rem; }
+  @media (min-width: 768px) {
+    .download-area {
+      min-height: 25rem; } }
   .download-area:after {
     content: '';
     display: block;
@@ -680,7 +730,7 @@ body {
     bottom: -7.5rem; }
     @media (min-width: 768px) {
       .download-area .image-app {
-        bottom: -11.25rem; } }
+        bottom: -14.375rem; } }
     .download-area .image-app img {
       max-width: 18.75rem; }
       @media (min-width: 768px) {
@@ -701,6 +751,10 @@ body {
 
 .all-payment .last-payment img {
   width: 13rem; }
+
+#map {
+  min-height: 25rem;
+  width: 100vw; }
 
 .counter-section {
   color: #fff; }
