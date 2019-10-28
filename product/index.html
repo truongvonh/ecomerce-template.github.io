@@ -24,11 +24,12 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
             </li>
           </ul>
+          <button class="d-md-none btn btn-danger py-0 px-3 border-0 rounded-0 ic-close" type="button"> <i class="icon ion-ios-close-empty fz-30"></i></button>
         </div>
         <div class="d-flex all-badge align-items-center ml-auto"><i class="icon ion-ios-search font-icon-header fz-30 fz-md-20 mr-3"></i><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-heart font-icon-header fz-24 fz-md-16 mr-3"></i>
             <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative d-none d-md-block" href="#"><i class="lnr lnr-chart-bars font-icon-header fz-24 fz-md-14 mr-3"></i>
             <p class="position-absolute mb-0 rounded-circle fz-12 bg-danger p-2 text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-cart mr-3 font-icon-header fz-24 fz-md-14 mr-3"></i>
-            <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-user font-icon-header fz-24 fz-md-14"></i></a><a class="badge-wrapper position-relative d-none d-md-block" href="#"><i class="lnr lnr-text-align-left silver-color ml-4 fz-24 fz-md-14"></i></a></div>
+            <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-user font-icon-header fz-24 fz-md-14"></i></a><a class="badge-wrapper position-relative toggle-menubar" href="#"><i class="lnr lnr-text-align-left silver-color ml-2 ml-md-4 fz-24 fz-md-14"></i></a></div>
       </div>
     </nav>
         <console class="log" breabcrum></console>
@@ -48,19 +49,20 @@
           <div class="col-12 col-lg-8 row mx-auto pt-5">
                 <div class="col-12 col-lg-2 d-flex justify-content-between align-items-end flex-lg-column align-items-lg-center mb-3 mb-lg-0">
                       <div class="slider slider-nav">
-                        <div class="p-2 overflow-hidden"><img class="bd-silver rounded cursor-pointer" src="./images/img_05.png"></div>
-                        <div class="p-2 overflow-hidden"><img class="bd-silver rounded cursor-pointer" src="./images/img_02.png"></div>
-                        <div class="p-2 overflow-hidden"><img class="bd-silver rounded cursor-pointer" src="./images/img_04.png"></div>
-                        <div class="p-2 overflow-hidden"><img class="bd-silver rounded cursor-pointer" src="./images/img_01.png"></div>
+                        <div class="p-2 overflow-hidden"><img src="./images/img_05.png"></div>
+                        <div class="p-2 overflow-hidden"><img src="./images/img_02.png"></div>
+                        <div class="p-2 overflow-hidden"><img src="./images/img_04.png"></div>
+                        <div class="p-2 overflow-hidden"><img src="./images/img_01.png"></div>
                       </div><a class="d-inline-block ml-auto ml-lg-0 mt-lg-auto" href="#" alt=""> <i class="lnr lnr-heart fz-36 ic-silver"></i></a><a class="d-inline-block" href="#" alt=""><i class="lnr lnr-upload fz-36 ic-silver"></i></a>
                 </div>
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 img-zoom-container">
                       <div class="slider slider-for mw-100">
-                        <div><img src="./images/img_05.png"></div>
-                        <div><img src="./images/img_02.png"></div>
-                        <div><img src="./images/img_04.png"></div>
-                        <div><img src="./images/img_01.png"></div>
+                        <div><img src="./images/img_05.png" id="img-hover-0"></div>
+                        <div><img src="./images/img_02.png" id="img-hover-1"></div>
+                        <div><img src="./images/img_04.png" id="img-hover-2"></div>
+                        <div><img src="./images/img_01.png" id="img-hover-3"></div>
                       </div>
+                  <div class="img-zoom-result" id="myresult"></div>
                   <div class="content d-flex align-items-center pt-4"><i class="icon far fa-check-square fz-20 ic-silver mr-2"></i>
                     <p class="mb-0 fz-14 mo-font ic-silver">The items will come exactly what the images described.</p>
                   </div>
@@ -104,8 +106,8 @@
                             <button class="btn p-4 border-0 mr-2 border bd-silver btn-warning" type="button"></button>
                           </div>
                       <p class="op-font dark-color fz-14 mt-4">Quality</p>
-                      <div class="custom-input-number d-inline-flex align-items-center"><span class="icon ion-ios-arrow-back ic-silver mr-2 fz-30"></span>
-                        <input class="rounded border border-secondary bg-light text-center py-1" value="1"><span class="icon ion-ios-arrow-forward ic-silver ml-2 fz-30"></span>
+                      <div class="custom-input-number d-inline-flex align-items-center"><i class="js-decrement cursor-pointer icon ion-ios-arrow-back ic-silver mr-2 fz-30"></i>
+                        <input class="js-get-value form-control p-0 text-center my-1 text-center" type="text" value="0"><i class="js-increment cursor-pointer icon ion-ios-arrow-forward ic-silver ml-2 fz-30"></i>
                       </div>
                 </div>
                 <article class="product-bottom-infor mt-5 col-12">
@@ -380,262 +382,321 @@
         </div>
       </div>
     </section>
-    <section class="people-like mt-4">
+    <section class="people-like mt-4 normal-dots">
       <div class="container">
         <div class="row"> 
           <div class="col-12">
             <h2 class="mb-4 os-font font-weight-bold fz-24 fz-md-24 dark-color">People also buy <br>with this product</h2>
-                <div class="carousel pb-5 slide normal-indicators" data-ride="carousel" id="recent-product-slider-1">
-                  <ol class="carousel-indicators">
-                    <li data-target="#recent-product-slider-1" data-slide-to="0"></li>
-                    <li data-target="#recent-product-slider-1" data-slide-to="1"></li>
-                    <li class="active" data-target="#recent-product-slider-1" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item">
-                          <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                          <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
-                          </div>
-                    </div>
-                    <div class="carousel-item active">
-                          <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
-                          </div>
-                    </div>
-                  </div>
-                </div>
           </div>
         </div>
+      </div>
+      <div class="group-type container p-0">     
+            <div class="pb-5 slide category-product-slider"><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
+            </div>
       </div>
     </section>
     <section class="product-tab bg-sidebar">
@@ -770,262 +831,321 @@
         </div>
       </div>
     </section>
-    <section class="similar-product mt-4 mb-5">
+    <section class="similar-product mt-4 mb-5 normal-dots">
       <div class="container">
         <div class="row"> 
           <div class="col-12">
             <h2 class="mb-4 os-font font-weight-bold fz-24 fz-md-24 dark-color">Similar Products</h2>
-                <div class="carousel pb-5 slide normal-indicators" data-ride="carousel" id="recent-product-slider-2">
-                  <ol class="carousel-indicators">
-                    <li data-target="#recent-product-slider-2" data-slide-to="0"></li>
-                    <li data-target="#recent-product-slider-2" data-slide-to="1"></li>
-                    <li class="active" data-target="#recent-product-slider-2" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item">
-                          <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                          <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
-                          </div>
-                    </div>
-                    <div class="carousel-item active">
-                          <div class="row"><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-6 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center deals-product-item" href="#">
-                                  <div class="thumb position-relative bg-white"><img class="w-75" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
-                                  <div class="cart-area d-flex justify-content-between w-100 mt-2">
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
-                                    <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
-                                  </div>
-                                  <h3 class="os-font font-weight-bold name-color fz-16">Product title</h3>
-                                  <div class="d-flex justify-content-center"> 
-                                        <ul class="rating" data-rating="5">
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                          <li class="rating__item"></li>
-                                        </ul>
-                                  </div>
-                                  <div class="price-area d-flex justify-content-around w-100 fz-10 name-color mb-4"><span>$48.00</span><span>
-                                      <del>$57.00</del></span></div>
-                                  <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
-                          </div>
-                    </div>
-                  </div>
-                </div>
           </div>
         </div>
+      </div>
+      <div class="group-type container p-0">   
+            <div class="pb-5 slide category-product-slider"><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a><a class="col-12 mb-3 col-md-3 mb-4 product-item d-flex flex-column justify-content-center text-center" href="#">
+                    <div class="thumb position-relative"><img class="w-75 mx-auto" src="./images/img_watch.png" alt="Product title"><i class="ic_sale_30p position-absolute"></i></div>
+                    <div class="cart-area d-flex justify-content-around w-100 mt-2">
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="far fa-heart"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-exchange-alt"></i></button>
+                      <button class="btn btn-link text-normal-color fz-20" type="button"> <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <h3 class="op-font name-color fz-16">Product title</h3>
+                    <div class="d-flex justify-content-center mb-3"> 
+                          <ul class="rating" data-rating="5">
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                            <li class="rating__item"></li>
+                          </ul>
+                    </div>
+                    <div class="price-area d-flex justify-content-around w-100 fz-12 name-color mb-4 px-md-5"><span>$48.00</span><span>
+                        <del>$57.00</del></span></div>
+                    <button class="btn btn-dark text-light text-uppercase rounded-pill w-75 fz-12 m-auto" type="button">shop now</button></a>
+            </div>
       </div>
     </section>
             <section class="counter-section pb-5">
@@ -1055,7 +1175,7 @@
                     <h2 class="fz-20 fz-md-30 os-font font-weight-bold">Download MantaDrop App Now!</h2>
                     <h3 class="fz-18 fz-md-18 op-font mb-4 ic-silver">For Better Experience</h3>
                   </div>
-                  <div class="download-app d-flex justify-content-center"><a href="#"><img class="mr-3 mr-md-5" src="images/appstore.png" alt="appstore"></a><a href="#"><img src="images/googleplay.png" alt="googleplay"></a></div>
+                  <div class="download-app d-flex justify-content-center"><a href=""><img class="mr-3 mr-md-5" src="images/appstore.png" alt="appstore"></a><a href=""><img src="images/googleplay.png" alt="googleplay"></a></div>
                 </div>
                 <div class="image-app text-center px-3 position-absolute"><img class="w-100" src="./images/img_phone.png" alt=""></div>
               </div>
@@ -1150,16 +1270,17 @@
             </div>
           </div>
         </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./../common/js/jquery.counterup.min.js"></script>
     <script src="./../common/js/counter.js"></script>
+    <script src="./../common/js/product-slider.js"></script>
+    <script src="./../common/js/input-custom.js"></script>
+    <script src="./../common/js/toggle-menu-mobile.js"></script>
   </body>
 </html>

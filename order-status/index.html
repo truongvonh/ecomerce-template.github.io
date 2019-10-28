@@ -24,11 +24,12 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
             </li>
           </ul>
+          <button class="d-md-none btn btn-danger py-0 px-3 border-0 rounded-0 ic-close" type="button"> <i class="icon ion-ios-close-empty fz-30"></i></button>
         </div>
         <div class="d-flex all-badge align-items-center ml-auto"><i class="icon ion-ios-search font-icon-header fz-30 fz-md-20 mr-3"></i><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-heart font-icon-header fz-24 fz-md-16 mr-3"></i>
             <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative d-none d-md-block" href="#"><i class="lnr lnr-chart-bars font-icon-header fz-24 fz-md-14 mr-3"></i>
             <p class="position-absolute mb-0 rounded-circle fz-12 bg-danger p-2 text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-cart mr-3 font-icon-header fz-24 fz-md-14 mr-3"></i>
-            <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-user font-icon-header fz-24 fz-md-14"></i></a><a class="badge-wrapper position-relative d-none d-md-block" href="#"><i class="lnr lnr-text-align-left silver-color ml-4 fz-24 fz-md-14"></i></a></div>
+            <p class="position-absolute mb-0 rounded-circle fz-12 p-2 bg-danger text-white d-flex align-items-center justify-content-center">0</p></a><a class="badge-wrapper position-relative" href="#"><i class="lnr lnr-user font-icon-header fz-24 fz-md-14"></i></a><a class="badge-wrapper position-relative toggle-menubar" href="#"><i class="lnr lnr-text-align-left silver-color ml-2 ml-md-4 fz-24 fz-md-14"></i></a></div>
       </div>
     </nav>
         <console class="log" breabcrum></console>
@@ -37,7 +38,7 @@
             <div class="row">
               <ul class="col-12 d-flex">
                 <li><a class="mr-1 dark-color op-font fz-24" href="#">Home \</a></li>
-                <li><a class="dark-color op-font fz-24" href="#">Order Status</a></li>
+                <li><a class="dark-color op-font fz-24" href="#">Order Tracking</a></li>
               </ul>
             </div>
           </div>
@@ -127,7 +128,7 @@
                           <p class="fz-16 mo-font">Lorem ipsum</p>
                         </div>
                         <div class="w-15 d-flex align-items-center justify-content-center flex-column number"><i class="fas fa-chevron-up js-increment cursor-pointer"></i>
-                          <input class="form-control p-0 text-center my-1" type="text" value="0" id="js-get-value"><i class="fas fa-chevron-down js-decrement cursor-pointer"></i>
+                          <input class="js-get-value form-control p-0 text-center my-1" type="text" value="0"><i class="fas fa-chevron-down js-decrement cursor-pointer"></i>
                         </div>
                         <div class="w-25 d-flex align-items-center justify-content-center flex-column"><strong class="d-block fz-16 mo-font">$29.90</strong><small class="fz-16 mo-font">6% off</small></div>
                         <div class="w-10 d-flex justify-content-md-between align-items-center flex-column flex-md-row">
@@ -141,7 +142,7 @@
                           <p class="fz-16 mo-font">Lorem ipsum</p>
                         </div>
                         <div class="w-15 d-flex align-items-center justify-content-center flex-column number"><i class="fas fa-chevron-up js-increment cursor-pointer"></i>
-                          <input class="form-control p-0 text-center my-1" type="text" value="0" id="js-get-value"><i class="fas fa-chevron-down js-decrement cursor-pointer"></i>
+                          <input class="js-get-value form-control p-0 text-center my-1" type="text" value="0"><i class="fas fa-chevron-down js-decrement cursor-pointer"></i>
                         </div>
                         <div class="w-25 d-flex align-items-center justify-content-center flex-column"><strong class="d-block fz-16 mo-font">$29.90</strong><small class="fz-16 mo-font">6% off</small></div>
                         <div class="w-10 d-flex justify-content-md-between align-items-center flex-column flex-md-row">
@@ -191,8 +192,8 @@
                 <div class="content">
                   <h2 class="text-light os-font fz-22 fz-md-30 text-center font-weight-bold">Download MantaDrop App Now!</h2>
                   <p class="text-light fz-16 fz-md-20">For Better Experience</p>
-                  <div class="image-download d-flex justify-content-center"><a class="btn btn-link" href="#">       
-                      <div class="app-store pl-5 pr-3"><img class="w-100" src="./images/ic_ios.png" alt=""></div></a><a class="btn btn-link" href="#"> 
+                  <div class="image-download d-flex justify-content-center"><a class="btn btn-link">       
+                      <div class="app-store pl-5 pr-3"><img class="w-100" src="./images/ic_ios.png" alt=""></div></a><a class="btn btn-link"> 
                       <div class="android pr-5 pl-3"><img class="w-100" src="./images/ic_android.png" alt=""></div></a></div>
                 </div>
                 <div class="image-app text-center px-3"><img class="w-100" src="./images/img_phone.png" alt=""></div>
@@ -289,13 +290,13 @@
           </div>
         </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/custom-select-box.js"></script>
+    <script src="./../common/js/product-slider.js"></script>
+    <script src="./../common/js/toggle-menu-mobile.js"></script>
   </body>
 </html>

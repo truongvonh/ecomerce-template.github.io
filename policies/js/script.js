@@ -56,6 +56,8 @@ function initMap() {
 
 function toggleReadmoreContent() {
 	$('.js-read-more').click(function(e) {
+		// e.preventDefault();
+		// alert('afaf');
 		let self = $(this);
 
 		let displayEl = $(this)

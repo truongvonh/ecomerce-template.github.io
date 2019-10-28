@@ -1,16 +1,3 @@
-$('select').on('change', function() {
-	if ($(this).val()) {
-		return $(this).css('color', 'rgb(71, 71, 71)');
-	} else {
-		return $(this).css('color', '#b2b2b2');
-	}
-});
-
-var input = document.querySelector('#phone');
-window.intlTelInput(input, {
-	utilsScript: 'js/utils.js',
-});
-
 function swipeNavigate() {
 	let dropdown = $('#navbarNavDropdown');
 	let body = $('body');
