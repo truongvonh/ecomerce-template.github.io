@@ -811,7 +811,8 @@ body {
   background: url("./../images/bg_visual.png") no-repeat center center;
   background-size: cover;
   position: relative;
-  height: 12.875rem; }
+  height: 12.875rem;
+  padding-top: 5rem; }
   @media (min-width: 768px) {
     .main-visual {
       height: 19.375rem; } }
@@ -825,6 +826,9 @@ body {
     content: '';
     display: block;
     background: rgba(255, 169, 0, 0.9); }
+  .main-visual.center {
+    background-attachment: fixed;
+    padding-top: 6.25rem; }
 
 .download-area {
   background: url("./../images/bg_girl_02.png") no-repeat center center;
@@ -1708,7 +1712,8 @@ body {
   background: url("./../images/bg_visual.png") no-repeat center center;
   background-size: cover;
   position: relative;
-  height: 12.875rem; }
+  height: 12.875rem;
+  padding-top: 5rem; }
   @media (min-width: 768px) {
     .main-visual {
       height: 19.375rem; } }
@@ -1722,6 +1727,9 @@ body {
     content: '';
     display: block;
     background: rgba(255, 169, 0, 0.9); }
+  .main-visual.center {
+    background-attachment: fixed;
+    padding-top: 6.25rem; }
 
 .download-area {
   background: url("./../images/bg_girl_02.png") no-repeat center center;

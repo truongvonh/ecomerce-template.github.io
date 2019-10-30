@@ -4,10 +4,10 @@ $(function() {
 		let breakPoint = 992;
 		if (widthWindow > breakPoint) {
 			$('.slider-nav').slick('unslick');
-			rototeSlider(true);
+			rototeSlider(true, 4);
 		} else {
 			$('.slider-nav').slick('unslick');
-			rototeSlider(false);
+			rototeSlider(false, 3);
 		}
 	});
 
@@ -21,7 +21,7 @@ $(function() {
 		infinite: true,
 	});
 
-	rototeSlider(false);
+	rototeSlider(false, 3);
 	renderCountDown();
 });
 
@@ -34,9 +34,9 @@ $(document).ready(function() {
 	});
 });
 
-function rototeSlider(vertical) {
+function rototeSlider(vertical, numberSlider) {
 	$('.slider-nav').slick({
-		slidesToShow: 3, // 3,
+		slidesToShow: numberSlider, // 3,
 		slidesToScroll: 1,
 		asNavFor: '.slider-for',
 		dots: false,
